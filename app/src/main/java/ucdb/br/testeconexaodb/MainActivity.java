@@ -1,5 +1,6 @@
 package ucdb.br.testeconexaodb;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,5 +12,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void abreNovo(){
+        Intent it = new Intent(this,NovoActivity.class);
+        startActivity(it);
+    }
+
+    public void abreLista(){
+        Intent it = new Intent(this,ListaActivity.class);
+        startActivity(it);
     }
 }
